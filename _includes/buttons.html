@@ -1,0 +1,9 @@
+<div class="buttons" NOT_style="text-align: center; border: 1px solid black; width: max-content; margin: 0 auto;">
+{% include buttons/download.html %}
+{% if page.interact_link %}
+  {% include buttons/thebelab.html %}
+  {% include buttons/nbinteract.html %}
+  {% include buttons/binder.html %}
+  {% include buttons/jupyterhub.html %}
+{% endif %}
+</div>

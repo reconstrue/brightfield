@@ -1,0 +1,17 @@
+{% if site.use_jupyterhub_button %}
+
+{% if site.use_jupyterlab %}
+    {% assign hub_app="lab" %}
+{% else %}
+    {% assign hub_app="notebook" %}
+{% endif %}
+
+{% capture interact_url_jupyterhub %}{{ site.binder_repo_org }}/{{ site.binder_repo_name }}/blob/{{ site.binder_repo_branch }}/{{ page.interact_link | url_encode }}{% endcapture %}
+{% capture interact_icon_jupyterhub %}https://colab.research.google.com/assets/colab-badge.svg{% endcapture %}
+<a href="{{ site.jupyterhub_url }}/github/{{ interact_url_jupyterhub }}"><button class="interact-button" id="interact-button-jupyterhub"><img class="interact-button-logo" src="{{ interact_icon_jupyterhub }}" alt="Interact" />{{ site.jupyterhub_interact_text }}</button></a>
+
+{% endif %}
+
+
+
+

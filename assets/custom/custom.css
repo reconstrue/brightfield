@@ -1,0 +1,32 @@
+/* Put your custom CSS here */
+.left {
+    margin: 5px 2px 2px 0px !important;
+    float: left !important;
+}
+
+
+.textbook_logo {
+    padding-top: 20px;
+    height: 110px;
+}
+
+TODO_kill {
+    color: #f0f0f0 !important;
+    border: #c0c0c0 2px solid;
+    background-color: #b0b0b0;
+    margin: 6px;
+}
+
+.c-page__nav__next, .c-page__nav__prev {
+    color: #404040 !important;
+    border: #00800020 1px solid;
+    background-color: #00800080;
+    margin: 6px;
+}
+
+.c-page__nav__next:hover, .c-page__nav__prev:hover {
+    color: #000000 !important;
+    border: #00780020 1px solid;
+    background-color: #008000c0;
+    margin: 6px;
+}
