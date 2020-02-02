@@ -4,29 +4,56 @@
     float: left !important;
 }
 
-
 .textbook_logo {
     padding-top: 20px;
     height: 110px;
 }
 
-TODO_kill {
-    color: #f0f0f0 !important;
-    border: #c0c0c0 2px solid;
-    background-color: #b0b0b0;
+.c-page__nav__prev {
+    color: #404040 !important;
+    border: #00800020 2px solid !important;
+    background-color: #00800020 !important;
     margin: 6px;
 }
 
-.c-page__nav__next, .c-page__nav__prev {
+.c-page__nav__prev:hover {
+    color: #000000 !important;
+    border: #00780020 2px solid !important;
+    background-color: #008000c0 !important;
+    margin: 6px;
+}
+
+.c-page__nav__next {
     color: #404040 !important;
-    border: #00800020 1px solid;
+    border: #008000FF 2px solid;
     background-color: #00800080;
     margin: 6px;
 }
 
-.c-page__nav__next:hover, .c-page__nav__prev:hover {
+.c-page__nav__next:hover {
     color: #000000 !important;
-    border: #00780020 1px solid;
+    border: #00780020 2px solid;
     background-color: #008000c0;
     margin: 6px;
+}
+
+#page-title {
+    font-weight: bold;
+}
+
+
+.c-textbook__sidebar {
+    NOT_width: 50px;
+}
+
+
+.c-textbook__page {
+    NOT_padding-left: 0px;
+}
+
+
+img.textbook_logo {
+    height: 45px !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }

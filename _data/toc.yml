@@ -16,46 +16,116 @@
 # - divider: true  # Will insert a divider in the sidebar
 # - header: My Header  # Will insert a header with no link in the sidebar
 
+#- url: /data_sources/allen_institute/test_1
+#  not_numbered: true
+
 - url: /intro
   not_numbered: true
-  title: Introduction
-
-- url: /project_status
-  not_numbered: true
-
-- url: /training_data/intro_training_data
-  title: Training Data
-  not_numbered: true
+  expand_sections: true
   sections:
-    - url: /training_data/allen_institute/intro_allen_institute
-      title: Allen Institute
+    - url: /introduction/brightfield
       not_numbered: true
-      expand_sections: true
+    - url: /introduction/colab_vm
+      not_numbered: true
+
+- url: /datasets
+  not_numbered: true
+  expand_sections: true
+  sections:
+    - url: /data_sources/the_allen
+      not_numbered: true
+    - url: /data_sources/allen_institute/allensdk_on_colab
+      not_numbered: true
+    - url: /data_sources/allen_institute/cell_types_db
+      not_numbered: true
+    - url: /data_sources/allen_institute/brightfield_neuron_reconstruction_challenge
+      not_numbered: true
+
+# bf_challenge stuff:
+#         - url: /data_sources/allen_institute/dataset_manifest
+#           not_numbered: true
+#           title: Dataset Manifest
+#         - url: /data_sources/allen_institute/initial_dataset_visualization  
+#           not_numbered: true
+#           title: Initial Dataset Visualization
+#         - url: /data_sources/allen_institute/wide_junk
+#           not_numbered: true
+#           title: Wide Junker
+
+# Works. But not if sub-section
+# - title: Tigue
+#   not_numbered: true
+#   url: http://tigue.com
+#   external: true
+
+- url: /visualization/viz_intro
+  not_numbered: true
+  expand_sections: true
+  sections:
+    - url: /visualization/colormapping
+      not_numbered: true
+    - url: /visualization/minip
+      not_numbered: true
+      title: Stack Projector
+    - title: Depth Coding
+      url: /visualization/depth_coding
+      not_numbered: true
+    - url: /visualization/camera_movable
+      title: Volumetric Viewer
+      not_numbered: true
+
+- url: /reconstruct
+  not_numbered: true
+  expand_sections: true
+  sections:
+    - url: /data_sources/allen_institute/initial_dataset_visualization
+      url: /skeletonization/skeleton_juxtaposer
+      not_numbered: true
+      title: Skeleton Overlay    
+    - url: /skeletonization/methods/shutu/shutu_intro
+      not_numbered: true
+      expand_subsections: true
       subsections:
-        - url: /training_data/allen_institute/brightfield_neuron_reconstruction_challenge
+        - url: /skeletonization/methods/shutu/install_shutu_on_colab
           not_numbered: true
-          title: Brightfield Competition
-        - url: /training_data/allen_institute/dataset_manifest
+        - url: /skeletonization/methods/shutu/brightfield_neuron_swc_by_shutu
           not_numbered: true
-          title: Dataset Manifest
-        - url: /training_data/allen_institute/initial_dataset_visualization  
-          not_numbered: true
-          title: Initial Dataset Visualization
-
-- url: /methods/methods_intro
-  title: Methods
-  not_numbered: true
-  sections:
-    - url: /methods/shutu/shutu_intro
-      not_numbered: true
-      title: Shutu
-    - url: /methods/unet/unet_intro
+    - url: /skeletonization/methods/unet/unet_intro
       non_numbered: true
       title: U-Net
+    - url: /skeletonization/methods/ffn/ffn_intro
+      non_numbered: true
+      expand_subsections: true
+      subsections:
+        - url: /skeletonization/methods/ffn/ffn_inference_demo
+          non_numbered: true
+          title: FFN Inference
 
-- url: /tools/tools_intro
-  title: Tools
+- divider: true
+
+- title: Appendices
+  url: /appendices
   not_numbered: true
+  expand_sections: true
+  sections:
+#    - url: https://ai.googleblog.com/2019/08/turbo-improved-rainbow-colormap-for.html
+#      not_numbered: true
+#      title: Brightfield Colormapping
+#      external: true
+    - url: /project_status
+      not_numbered: true
+      title: Project Status
+    - url: https://github.com/reconstrue/brightfield_on_colab
+      not_numbered: true
+      title: GitHub
+      external: true
+    - url: "https://github.com/reconstrue/brightfield_on_colab/blob/master/License"
+      not_numbered: true
+      title: Apache 2.0 License
+      external: true
+
+
+
 
 # - url: /brightfield_neuron_reconstruction_challenge
 #   not_numbered: true
