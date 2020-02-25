@@ -5,9 +5,19 @@
 
 $color-nav-links: rgba(0,126, 126, 0.7);
 
-.c-page__nav__prev,
+.c-page__nav__prev {
+  flex: 1;
+  font-weight: bold;  
+  color: red; /* $color-nav-links; */
+  border: 1px solid $color-nav-links;
+  border-radius: 3px;
+  padding: /* pre-jft: $spacing-unit-small */ 10px;
+}
+
+
 .c-page__nav__next {
   flex: 1;
+  font-weight: bold;  
   color: $color-nav-links;
   border: 1px solid $color-nav-links;
   border-radius: 3px;

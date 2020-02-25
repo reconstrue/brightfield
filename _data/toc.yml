@@ -67,10 +67,10 @@
     - url: /visualization/minip
       not_numbered: true
       title: Stack Projector
-    - title: Depth Coding
+    - title: ==> Depth Coding
       url: /visualization/depth_coding
       not_numbered: true
-    - url: /visualization/camera_movable
+    - url: /visualization/neuroglancer
       title: Volumetric Viewer
       not_numbered: true
 

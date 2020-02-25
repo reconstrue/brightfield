@@ -96,7 +96,7 @@ div.jb_cell {
       width: 100%;
       div.input {
           // Input sections of cells should stay the same width, only outputs are wide
-          width: 70%;
+          width: 100%; /* 70%; */
       }
 
     img {
