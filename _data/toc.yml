@@ -40,6 +40,8 @@
       not_numbered: true
     - url: /data_sources/allen_institute/brightfield_neuron_reconstruction_challenge
       not_numbered: true
+    - url: /data_sources/allen_institute/dataset_manifest
+      not_numbered: true
 
 # bf_challenge stuff:
 #         - url: /data_sources/allen_institute/dataset_manifest
