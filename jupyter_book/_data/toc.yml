@@ -28,6 +28,20 @@
     - url: /introduction/colab_vm
       not_numbered: true
 
+- url: /allen_institute
+  not_numbered: true
+  expand_sections: true
+  sections:
+    - url: /allen_institute/allensdk
+      not_numbered: true
+    - url: /allen_institute/cell_types_db
+      not_numbered: true
+    - url: /allen_institute/brightfield_neuron_reconstruction_challenge
+      not_numbered: true
+    - url: /data_sources/allen_institute/dataset_manifest
+      not_numbered: true
+
+
 - url: /datasets
   not_numbered: true
   expand_sections: true
@@ -54,7 +68,7 @@
 #           not_numbered: true
 #           title: Wide Junker
 
-# Works. But not if sub-section
+# Works. But not if in sub-section?
 # - title: Tigue
 #   not_numbered: true
 #   url: http://tigue.com
@@ -69,9 +83,6 @@
     - url: /visualization/minip
       not_numbered: true
       title: Stack Projector
-    - title: ==> Depth Coding
-      url: /visualization/depth_coding
-      not_numbered: true
     - url: /visualization/neuroglancer
       title: Volumetric Viewer
       not_numbered: true

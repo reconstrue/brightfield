@@ -16,12 +16,11 @@
 
 #######################################################################################
 # Jekyll site settings
-title: Brightfield on Colab
+title: Brightfield Reconstruction
 author: John Tigue
 email: john@tigue.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Brightfield microscopy imaging and analysis on Google Colab
-
+  Reconstruction of biocytin-stained neurons from brightfield microscopy images. Computer vision to recognize single neuron morphologies. Based on Jupyter (and so Colab).
 baseurl: "" # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
 url: "https://tigue.com/" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -122,7 +121,7 @@ defaults:
       toc_label: "  Page contents"
       toc_icon: "list-ul"
       excerpt: ''
-
+      
 favicon_path: "assets/images/logo/reconstrue_logo_brandmark_favicon_32_x_32.png"
 
 # Markdown Processing
